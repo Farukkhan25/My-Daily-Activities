@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { addToDb } from "../../Utilities/fakedb";
 import Activity from "../Activity/Activity";
 import Profile from "../Profile/Profile";
+import Questions from "../Questions/Questions";
 import "./Activities.css";
 
 const Activities = () => {

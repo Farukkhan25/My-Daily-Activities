@@ -1,7 +1,10 @@
 import React, { useRef } from 'react';
 import "./Profile.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Profile = (props) => {
+    const notify = () => toast("Wow Activities Completed!");
     const { time } = props;
     
     let total = 0;
@@ -38,9 +41,7 @@ const Profile = (props) => {
         </div>
         <h3>Add Rest Hours</h3>
         <div className="rest-hours">
-          <button id="rest">
-            5h
-          </button>
+          <button id="rest">5h</button>
           <button>6h</button>
           <button>7h</button>
           <button>8h</button>
@@ -54,9 +55,10 @@ const Profile = (props) => {
           <h4>Rest Time</h4>
           <h4>{6} hours</h4>
         </div>
-        <button className="btn-activity">
+        <button onClick={notify} className="btn-activity">
           <h2>Activity Completed</h2>
-        </button>
+            </button>
+            <ToastContainer></ToastContainer>
       </div>
     );
 };
