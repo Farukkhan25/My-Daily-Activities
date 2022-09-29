@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { addToDb } from "../../Utilities/fakedb";
 import Activity from "../Activity/Activity";
 import Profile from "../Profile/Profile";
 import "./Activities.css";
@@ -17,7 +18,12 @@ const Activities = () => {
         // console.log(activity);
         const newTime = [...time, activity];
         setTime(newTime);
-  }
+        // addToDb(activity.id);
+    }
+    
+    // const AddToLocalStorage = (activity) => {
+    //     addToDb(id.innerText);
+    // }
 
     return (
       <div className="all-activities-container">
@@ -32,7 +38,7 @@ const Activities = () => {
         </div>
 
         <div className="info-container">
-         <Profile time={time}></Profile>
+          <Profile time={time} ></Profile>
         </div>
       </div>
     );

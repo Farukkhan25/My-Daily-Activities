@@ -69,7 +69,7 @@
     margin-top: 25px;
     margin-bottom: 50px;
 }
-.rest-hours p{
+.rest-hours button{
     border: 1px solid firebrick;
     border-radius: 50%;
     background-color: floralwhite;

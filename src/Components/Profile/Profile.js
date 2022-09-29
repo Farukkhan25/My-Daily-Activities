@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import "./Profile.css";
 
 const Profile = (props) => {
     const { time } = props;
+    
     let total = 0;
     for (const product of time) {
         total = total + product.time;
     }
-    console.log(props);
+    
 
     return (
       <div>
@@ -37,10 +38,12 @@ const Profile = (props) => {
         </div>
         <h3>Add Rest Hours</h3>
         <div className="rest-hours">
-          <p>5h</p>
-          <p>6h</p>
-          <p>7h</p>
-          <p>8h</p>
+          <button id="rest">
+            5h
+          </button>
+          <button>6h</button>
+          <button>7h</button>
+          <button>8h</button>
         </div>
         <h3>Activities Details</h3>
         <div className="activities-details">
@@ -49,7 +52,7 @@ const Profile = (props) => {
         </div>
         <div className="activities-details">
           <h4>Rest Time</h4>
-          <h4>6 hours</h4>
+          <h4>{6} hours</h4>
         </div>
         <button className="btn-activity">
           <h2>Activity Completed</h2>

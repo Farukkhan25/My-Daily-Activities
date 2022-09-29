@@ -19,10 +19,10 @@ const Activity = ({ activity, AddActivitiesTime }) => {
         <p>Time: {time} hours</p>
       </div>
       <button
-        onClick={() => AddActivitiesTime(activity)}
+         
         className="btn-cart"
       >
-        <p className="btn-text">Add to List</p>
+        <p className="btn-text">Add Activities Time</p>
       </button>
     </div>
   );
