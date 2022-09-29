@@ -16,8 +16,77 @@
   box-shadow: 4px 4px 8px gray;
   border-radius: 5px;
   padding: 10px;
-  margin: 5px 10px;
-  text-align: center;
+  margin: 5px 0px;
+  text-align: left;
+}
+.general-infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 18px 0px;
+}
+.general-infos img{
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 40%;
+}
+.basic-infos{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 10px;
+    margin: 20px 0px 55px;
+}
+.basic-info{
+    display: flex;
+    flex-direction: column;
+}
+.basic-info h2, h3{
+    padding: 2px;
+    margin: 0px;
+}
+.basic-info h3{
+    color: gray;
+}
+.basic-info span{
+    font-size: 20px;
+    color: gainsboro;
+    font-weight: 400;
+    padding-left: 3px;
+}
+.rest-hours{
+    display: flex;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    padding: 12px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.rest-hours p{
+    border: 1px solid firebrick;
+    border-radius: 50%;
+    background-color: floralwhite;
+    padding: 10px 12px;
+}
+.activities-details{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    background-color: antiquewhite;
+    margin: 20px 0px;
+}
+.activities-details h4{
+    padding: 0px 15px;
+}
+.btn-activity {
+  width: 100%;
+  background: lightskyblue;
+  border: none;
+  border-radius: 0px 0px 8px 8px;
+    padding: 10px 0px;
+    margin-top: 30px;
 }
 /* Tablet */
 @media screen and (max-width: 820px) {
