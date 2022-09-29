@@ -48,24 +48,28 @@
 /* Tablet */
 @media screen and (max-width: 820px) {
   .activity {
-    width: 500px;
+    width: 700px;
+    height: 800px;
     background-color: lightcyan;
         border: 1px solid maroon;
     box-shadow: 2px 2px 4px gray;
   }
   .activity img {
-    width: 485px;
+        width: 687px;
+    height: 580px;
   }
 }
 /* Mobile */
 @media screen and (max-width: 420px) {
   .activity {
     max-width: 90%;
+    height: 550px;
     background-color: lightcyan;
         border: 1px solid maroon;
     box-shadow: 2px 2px 4px gray;
   }
   .activity img {
-   max-width: 335px;
+   width: 96%;
+   height: 300px;
   }
 }
