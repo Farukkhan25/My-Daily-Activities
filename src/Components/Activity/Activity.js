@@ -1,8 +1,7 @@
-import React from 'react';
-import './Activity.css';
+import React from "react";
+import "./Activity.css";
 
 const Activity = ({ activity, AddActivitiesTime }) => {
-  // const { AddActivitiesTime } = props;
   const { name, picture, priority, time, description } = activity;
 
   return (
@@ -18,10 +17,7 @@ const Activity = ({ activity, AddActivitiesTime }) => {
         </p>
         <p>Time: {time} hours</p>
       </div>
-      <button
-         
-        className="btn-cart"
-      >
+      <button className="btn-cart">
         <p className="btn-text">Add Activities Time</p>
       </button>
     </div>

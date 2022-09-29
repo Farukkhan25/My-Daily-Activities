@@ -1,6 +1,6 @@
-import './App.css';
-import Activities from './Components/Activities/Activities';
-import Questions from './Components/Questions/Questions';
+import "./App.css";
+import Activities from "./Components/Activities/Activities";
+import Questions from "./Components/Questions/Questions";
 
 function App() {
   return (

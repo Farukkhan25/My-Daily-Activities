@@ -52,11 +52,11 @@
     width: 700px;
     height: 800px;
     background-color: lightcyan;
-        border: 1px solid maroon;
+    border: 1px solid maroon;
     box-shadow: 2px 2px 4px gray;
   }
   .activity img {
-        width: 687px;
+    width: 687px;
     height: 580px;
   }
 }
@@ -66,11 +66,11 @@
     max-width: 90%;
     height: 550px;
     background-color: lightcyan;
-        border: 1px solid maroon;
+    border: 1px solid maroon;
     box-shadow: 2px 2px 4px gray;
   }
   .activity img {
-   width: 96%;
-   height: 300px;
+    width: 96%;
+    height: 300px;
   }
 }
