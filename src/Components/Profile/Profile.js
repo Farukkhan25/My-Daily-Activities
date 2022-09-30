@@ -61,7 +61,7 @@ const Profile = (props) => {
       <h3>Activities Details</h3>
       <div className="activities-details">
         <h4>Activities Time</h4>
-        <h4>{total}</h4>
+        <h4>{total} hours</h4>
       </div>
       <div className="activities-details">
         <h4>Rest Time</h4>
