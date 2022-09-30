@@ -4,6 +4,7 @@
     "picture": "./prayer.jpg",
     "priority": 1,
     "time": 2,
+    "restHour": 6,
     "name": "Prayer",
     "description": "“Through namaz, a Muslim is standing before the sight of Allah and in attendance, submitting to Allah's will”, so i say prayer 5 times in a day. \r\n"
   },
@@ -12,6 +13,7 @@
     "picture": "./coding.jpg",
     "priority": 2,
     "time": 8,
+    "restHour": 7,
     "name": "Coding Practice",
     "description": "Since i have joined web development course in programming hero, so every day i have to manage 8 hours for watching the tutorials and practice.  \r\n"
   },
@@ -20,6 +22,7 @@
     "picture": "./meditation.jpg",
     "priority": 3,
     "time": 1,
+    "restHour": 8,
     "name": "Meditation",
     "description": "Meditation brings inner-peace. It reduce stress, controls anxiety, addictions, pains,pressure,memory-loss. As a programmer i must have to do meditation.\r\n"
   },
@@ -28,6 +31,7 @@
     "picture": "./exercise.jpg",
     "priority": 4,
     "time": 1,
+    "restHour": 9,
     "name": "Exercise",
     "description": "Exercise is so important to be fit. So i keep some times to do exercise everyday. Physical strength gives us mental support.\r\n"
   },
@@ -36,6 +40,7 @@
     "picture": "./business.jpg",
     "priority": 5,
     "time": 4,
+    "restHour": 9,
     "name": "Business Workout",
     "description": "All working days i visit to our business institution to help my father in his business. I a son i love to help my parents.\r\n"
   },
@@ -44,6 +49,7 @@
     "picture": "./family.jpg",
     "priority": 6,
     "time": 1,
+    "restHour": 9,
     "name": "Family Hour",
     "description": "I believe family is the most important unit of my life. So how much busy i could be, i always keep at least an hour just only for my family. At that time, no social media, no work.\r\n"
   }

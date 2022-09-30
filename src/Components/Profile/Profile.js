@@ -1,16 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Profile.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Profile = (props) => {
+  const { time } = props.time;
   const notify = () => toast("Wow Activities Completed!");
-  const { time } = props;
-
   let total = 0;
-  for (const product of time) {
-    total = total + product.time;
+  for (const times of props.time) {
+    total = total + times.time;
   }
+
+  const [restTime, setRestTime] = useState([]);
+  useEffect(() => {
+    const existData = JSON.parse(localStorage.getItem("data"));
+    if (existData) {
+      setRestTime(existData);
+    }
+  }, []);
+
+  const handleRestTime = (e) => {
+    const newRestTime = e.target.innerText;
+    localStorage.setItem("data", JSON.stringify(newRestTime));
+    setRestTime(newRestTime);
+  };
 
   return (
     <div>
@@ -40,10 +53,10 @@ const Profile = (props) => {
       </div>
       <h3>Add Rest Hours</h3>
       <div className="rest-hours">
-        <button id="rest">5h</button>
-        <button>6h</button>
-        <button>7h</button>
-        <button>8h</button>
+        <button onClick={handleRestTime}>6h</button>
+        <button onClick={handleRestTime}>7h</button>
+        <button onClick={handleRestTime}>8h</button>
+        <button onClick={handleRestTime}>9h</button>
       </div>
       <h3>Activities Details</h3>
       <div className="activities-details">
@@ -52,7 +65,7 @@ const Profile = (props) => {
       </div>
       <div className="activities-details">
         <h4>Rest Time</h4>
-        <h4>{6} hours</h4>
+        <h4>{restTime}</h4>
       </div>
       <button onClick={notify} className="btn-activity">
         <h2>Activity Completed</h2>
