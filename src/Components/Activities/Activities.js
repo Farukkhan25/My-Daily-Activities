@@ -21,16 +21,22 @@ const Activities = () => {
 
   return (
     <div className="all-activities-container">
-      <div className="activities-container">
-        {activities.map((activity) => (
-          <Activity
-            key={activity.id}
-            activity={activity}
-            AddActivitiesTime={AddActivitiesTime}
-          ></Activity>
-        ))}
-      </div>
+      <div className="all-activities">
+        <div className="header">
+          <img src="./icon.JPG" alt="" />
+          <h1 className="text">My Daily Activities</h1>
+        </div>
 
+        <div className="activities-container">
+          {activities.map((activity) => (
+            <Activity
+              key={activity.id}
+              activity={activity}
+              AddActivitiesTime={AddActivitiesTime}
+            ></Activity>
+          ))}
+        </div>
+      </div>
       <div className="info-container">
         <Profile time={time}></Profile>
       </div>

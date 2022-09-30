@@ -26,7 +26,7 @@ const Profile = (props) => {
   };
 
   return (
-    <div>
+    <div className="all-infos">
       <div className="general-infos">
         <img src="/photos/myphoto.jpg" alt="" />
         <h2>Md. Faruk Khan</h2>
